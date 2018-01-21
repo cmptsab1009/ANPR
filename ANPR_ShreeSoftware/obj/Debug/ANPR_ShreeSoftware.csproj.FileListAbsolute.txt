@@ -1,0 +1,16 @@
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\bin\Debug\ANPR_ShreeSoftware.exe.config
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\bin\Debug\ANPR_ShreeSoftware.exe
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\bin\Debug\ANPR_ShreeSoftware.pdb
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.csprojResolveAssemblyReference.cache
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\obj\Debug\MainWindow.baml
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\obj\Debug\MainWindow.g.cs
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\obj\Debug\App.g.cs
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware_MarkupCompile.cache
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.g.resources
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.Properties.Resources.resources
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.csproj.GenerateResource.Cache
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.exe
+E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.pdb
+E:\Proffestional\Projects\ANPR\Project\ANPR\ANPR_ShreeSoftware\bin\Debug\ANPR_ShreeSoftware.exe.config
+E:\Proffestional\Projects\ANPR\Project\ANPR\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.exe
+E:\Proffestional\Projects\ANPR\Project\ANPR\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.pdb
