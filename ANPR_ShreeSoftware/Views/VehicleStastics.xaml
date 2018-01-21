@@ -1,0 +1,169 @@
+﻿<Page x:Class="DesignApp.Views.VehicleStastics"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="VehicleStastics">
+
+    <Grid x:Name="grdMain" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Start left side grid container and controls-->
+        <Border BorderBrush="Gray" BorderThickness="0,0,1,0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid x:Name="grdLeftContainer" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" HorizontalAlignment="Stretch" Background="Gray">
+                    <TextBlock Text="Vehicle Statistics" Style="{StaticResource TextBlockStyle}" HorizontalAlignment="Left" Margin="5,5,0,5" FontSize="20"  />
+                </Border>
+
+                <Border Grid.Row="1" HorizontalAlignment="Stretch" BorderBrush="Gray" BorderThickness="0,1" >
+                    <Grid HorizontalAlignment="Stretch"  Margin="5,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid x:Name="grdFirst" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Stretch">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Icons/icn.png" Grid.Column="0" Width="40" />
+                            <Grid   Grid.Column="1" VerticalAlignment="Stretch" Margin="5,0,0,0" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="Queue Size" VerticalAlignment="Bottom" FontSize="15"  Grid.Row="0"/>
+                                <TextBlock Text="10" VerticalAlignment="Top" FontSize="10" Grid.Row="1" />
+                            </Grid>
+                        </Grid>
+                        <Grid x:Name="grdSecond" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Stretch">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Icons/icn.png" Grid.Column="0" Width="40" />
+                            <Grid   Grid.Column="1" VerticalAlignment="Stretch" Margin="5,0,0,0" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="Last Hour" VerticalAlignment="Bottom" FontSize="15"  Grid.Row="0"/>
+                                <TextBlock Text="10" VerticalAlignment="Top" FontSize="10" Grid.Row="1" />
+                            </Grid>
+                        </Grid>
+                        <Grid x:Name="grdThird" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Stretch">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Icons/icn.png" Grid.Column="0" Width="40" />
+                            <Grid   Grid.Column="1" VerticalAlignment="Stretch" Margin="5,0,0,0" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="Today" VerticalAlignment="Bottom" FontSize="15"  Grid.Row="0"/>
+                                <TextBlock Text="10" VerticalAlignment="Top" FontSize="10" Grid.Row="1" />
+                            </Grid>
+                        </Grid>
+                        <Grid x:Name="grdFourth" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Stretch">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Icons/icn.png" Grid.Column="0" Width="40" />
+                            <Grid   Grid.Column="1" VerticalAlignment="Stretch" Margin="5,0,0,0" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <TextBlock Text="Last 24 Hour" VerticalAlignment="Bottom" FontSize="15"  Grid.Row="0"/>
+                                <TextBlock Text="10" VerticalAlignment="Top" FontSize="10" Grid.Row="1" />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Border>
+
+                <!--Start Grid Display and controls-->
+                <Grid Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid x:Name="grdOptions" Grid.Row="0" HorizontalAlignment="Stretch">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="License Plat No" Grid.Column="0" Margin="5"/>
+                        <TextBox  Grid.Column="1" Margin="5"/>
+                        <ComboBox Grid.Column="2" Margin="5"/>
+                        <Button  Grid.Column="3" Content="More" Margin="5"/>
+                        <Button  Grid.Column="4" Content="Print" Margin="5"/>
+
+                    </Grid>
+                    <Border BorderBrush="Gray" BorderThickness="1" Grid.Row="1" HorizontalAlignment="Stretch" Margin="40"  >
+                        <Grid  HorizontalAlignment="Stretch"  >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <!--Start  header UI-->
+                            <Border  Grid.Row="0" HorizontalAlignment="Stretch" Background="LightGray">
+                                <TextBlock Text="Vehicle Search Reults" Foreground="#ffffff" FontSize="15" VerticalAlignment="Center" FontWeight="SemiBold"/>
+                            </Border>
+                            <!--End  header UI-->
+                            <!--Start  display records UI-->
+                            <Border Grid.Row="1" HorizontalAlignment="Stretch" BorderBrush="Gray" BorderThickness="0,1"  >
+                                <Grid HorizontalAlignment="Stretch" Margin='5,10' >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="Display" Margin="5,0"/>
+                                    <ComboBox Grid.Column="1" Margin="5,0"></ComboBox>
+                                    <TextBlock Grid.Column="2" Text="Roecrds" Margin="5,0"/>
+                                </Grid>
+                            </Border>
+                            <!--End  display records UI-->
+
+                            <Border BorderBrush="Gray" BorderThickness="0,0,0,1" Grid.Row="2" HorizontalAlignment="Stretch"  >
+                                <TextBlock Text="Same content as simtix"/>
+                            </Border>
+                            <Grid Grid.Row="3">
+                                <TextBlock Text="Video content" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Grid>
+                        </Grid>
+                    </Border>
+                   
+
+                </Grid>
+
+                <!--End Grid display and controls-->
+            </Grid>
+
+        </Border>
+
+        <!--End left side grid container and controls-->
+
+    </Grid>
+</Page>

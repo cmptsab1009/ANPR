@@ -1,0 +1,220 @@
+﻿<Page x:Class="DesignApp.Views.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+     d:DesignHeight="300" d:DesignWidth="300"
+	Title="HomePage">
+
+    <Grid x:Name="grdMain" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  >
+        <!--start Grid container and it's content controls-->
+        <Grid x:Name="grdContainer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--Start right side panel content and controls-->
+
+            <!--Start video frame container controls-->
+            <Grid x:Name="grdvideoFrame" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="2,5,5,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Gray" BorderThickness="1" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,1.5,1.5" >
+                    <Grid   HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  >
+                        <TextBlock Text="Frame1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </Border>
+                <Border BorderBrush="Gray" BorderThickness="1" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="1.5,0,0,1.5">
+                    <Grid  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                        <TextBlock Text="Frame2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </Border>
+                <Border BorderBrush="Gray" BorderThickness="1" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,1.5,1.5,0" >
+                    <Grid   HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   >
+                        <TextBlock Text="Frame3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </Border>
+                <Border BorderBrush="Gray"  BorderThickness="1" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="1.5,1.5,0,0"></Border>
+                <Grid  Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                    <TextBlock Text="Frame4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+
+            </Grid>
+
+            <!--End video frame container controls-->
+
+            <!--Start grid list container and cotrols-->
+
+            <Border BorderBrush="Gray" BorderThickness="1" Grid.Column="0" Grid.Row="1"  Margin="2,5,5,0"  >
+                <Grid x:Name="grdListContainer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid x:Name="grdListHeader" HorizontalAlignment="Stretch" Background="DarkGray" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="1.6*"/>
+                            <ColumnDefinition Width="1.6*"/>
+                            <ColumnDefinition Width="1.5*"/>
+                            <ColumnDefinition Width="1.2*"/>
+                            <ColumnDefinition Width="1.1*"/>
+                            <ColumnDefinition Width="1.1*"/>
+                            <ColumnDefinition Width="1.5*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Date Time" Grid.Column="0" FontSize="15"  Style="{StaticResource TextBlockStyle}" />
+                        <TextBlock Text="Lane" Grid.Column="1" FontSize="15"  Style="{StaticResource TextBlockStyle}"/>
+                        <TextBlock Text="Plate Number" Grid.Column="2" FontSize="15"  Style="{StaticResource TextBlockStyle}"/>
+                        <TextBlock Text="Country" Grid.Column="3" FontSize="15"  Style="{StaticResource TextBlockStyle}"/>
+                        <TextBlock Text="Vehicle No." Grid.Column="4" FontSize="15"  Style="{StaticResource TextBlockStyle}"/>
+                        <TextBlock Text="Status" Grid.Column="5" FontSize="15"  Style="{StaticResource TextBlockStyle}"/>
+                        <TextBlock Text="Color" Grid.Column="6" FontSize="15"  Style="{StaticResource TextBlockStyle}"/>
+                        <TextBlock Text="Bg Color" Grid.Column="7" FontSize="15"  Style="{StaticResource TextBlockStyle}" />
+                        <TextBlock Text="Category" Grid.Column="8" FontSize="15"  Style="{StaticResource TextBlockStyle}"/>
+                        <TextBlock Text="Type" Grid.Column="9" FontSize="15"  Style="{StaticResource TextBlockStyle}"/>
+                    </Grid>
+
+                    <ListView x:Name="listDetails" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1"   >
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                            <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid x:Name="grdListContent" HorizontalAlignment="Stretch" >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="1.6*"/>
+                                        <ColumnDefinition Width="1.6*"/>
+                                        <ColumnDefinition Width="1.5*"/>
+                                        <ColumnDefinition Width="1.2*"/>
+                                        <ColumnDefinition Width="1.1*"/>
+                                        <ColumnDefinition Width="1.1*"/>
+                                        <ColumnDefinition Width="1.5*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="{Binding Path=Date}" Grid.Column="0" FontSize="15"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Path=Lane  }" Grid.Column="1" FontSize="15"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Path=PlateNumber  }" Grid.Column="2" FontSize="15"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Path=Country  }" Grid.Column="3" FontSize="15"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Path=VehNo }" Grid.Column="4" FontSize="15"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Path=Status }" Grid.Column="5" FontSize="15"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Path=Color }" Grid.Column="6" FontSize="15"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Path=BgColor }" Grid.Column="7" FontSize="15"  HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <TextBlock Text="{Binding Path=Categorytype }" Grid.Column="8" FontSize="15"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="{Binding Path=Type }" Grid.Column="9" FontSize="15"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                        
+                    </ListView>
+                </Grid>
+            </Border>
+
+            <!-- End grid list container and cotrols-->
+
+            <!--End right side panel content and controls-->
+
+            <!--Start left side panel UI-->
+            <Grid x:Name="grdLeftContainer" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="0,0,2,0" >
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.504,2.0" StartPoint="0.500,0.00">
+                        <GradientStop Color="#FFFFFF"  Offset="0"/>
+                        <GradientStop Color="#00B7E0" Offset="0.800"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Welcome" FontWeight="SemiBold" FontSize="20" HorizontalAlignment="Center"/>
+                        <TextBlock Text="TestUser" FontSize="15" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Image Source="/Icons/setting.png" Grid.Column="1" Height="30" />
+                    <Image Source="/Icons/Logout.png" Grid.Column="2" Height="30" />
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Time:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" FontSize="15"></TextBlock>
+                    <TextBlock Text="12:00:00" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" FontSize="15"></TextBlock>
+                    <TextBlock Text="Date:" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" FontSize="15"></TextBlock>
+                    <TextBlock Text="01/01/2001" Grid.Column="1"  Grid.Row="1" HorizontalAlignment="Center" FontSize="15"></TextBlock>
+                    <TextBlock Text="Day:" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" FontSize="15"></TextBlock>
+                    <TextBlock Text="Monday" Grid.Column="1"  Grid.Row="2" HorizontalAlignment="Center" FontSize="15"></TextBlock>
+                </Grid>
+
+                <Grid Grid.Row="2">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Home" Grid.Column="0" Grid.Row="0" FontSize="15" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Search" Grid.Column="0" Grid.Row="1" FontSize="15" HorizontalAlignment="Center"/>
+                    <Image Source="/Icons/home.png" Grid.Column="1" Grid.Row="0" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Image Source="/Icons/search.png" Grid.Column="1" Grid.Row="1" Height="40" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+                </Grid>
+                <StackPanel Grid.Row="3" Orientation="Vertical" Margin="30,0,0,0" >
+                    <TextBlock Text="Last login : " VerticalAlignment="Top" FontSize="20" FontWeight="SemiBold" HorizontalAlignment="Stretch" Margin="0,5,0,0" />
+                    <TextBlock Text="TestUser" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Stretch" Margin="0,5,0,0"/>
+                    <TextBlock Text="01/01/2001 01:00:00" VerticalAlignment="Bottom" FontSize="15" HorizontalAlignment="Stretch" Margin="0,5,0,0"/>
+                </StackPanel>
+                <StackPanel Grid.Row="4" Orientation="Vertical" Margin="30,10,0,0" >
+                    <TextBlock Text="For any query contact : " VerticalAlignment="Top" FontSize="20" FontWeight="SemiBold" HorizontalAlignment="Stretch" Margin="0,5,0,0" />
+                    <TextBlock Text="abc@abc.com" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Stretch" Margin="0,5,0,0"/>
+                    <TextBlock Text="abc@gmail.com" VerticalAlignment="Bottom" FontSize="15" HorizontalAlignment="Stretch" Margin="0,5,0,0"/>
+                    <Image Source="/Icons/logo.png" Grid.Column="1" Grid.Row="1" Height="50" Width="200" HorizontalAlignment="Left" />
+                    <TextBlock Text="Version No: 1.0.0" VerticalAlignment="Bottom" FontSize="15" HorizontalAlignment="Stretch" Margin="0,5,0,0"/>
+
+                </StackPanel>
+
+            </Grid>
+
+            <!--End left side panel UI-->
+        </Grid>
+        <!--End Grid container and it's content controls-->
+
+    </Grid>
+</Page>

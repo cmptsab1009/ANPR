@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Proffestional\Projects\ANPR\Project\ANPR\ANPR_ShreeSoftware\obj\Debug\
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\
 ANPR_ShreeSoftware
 none
 false
 DEBUG;TRACE
-E:\Proffestional\Projects\ANPR\Project\ANPR\ANPR_ShreeSoftware\App.xaml
-11151548125
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\App.xaml
+7-367826334
 
-92121580806
-121886138872
-MainWindow.xaml;
+16-1834972675
+12-1401562060
+MainWindow.xaml;UserCotrol\LiveStreamingUserControl.xaml;Views\HomePage.xaml;Views\LivestreamingPage.xaml;Views\LoginPage.xaml;Views\PartialView\SearchOptionPage.xaml;Views\VehicleStastics.xaml;
 
 False
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignApp.Views.PartialView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace ANPR_ShreeSoftware
         public MainWindow()
         {
             InitializeComponent();
+            mainFrame.NavigationService.Navigate(new SearchOptionPage());
         }
     }
 }

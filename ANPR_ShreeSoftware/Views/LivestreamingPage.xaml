@@ -1,0 +1,86 @@
+﻿<Page x:Class="DesignApp.Views.LivestreamingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:usrControl="clr-namespace:DesignApp.UserCotrol"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="LivestreamingPage">
+
+    <Grid x:Name="grdMain" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="grdMainStreaming" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <!--start left side of grid and contents-->
+          
+            <Grid Grid.Column="0"  VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Lane" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="15"/>
+                <TextBlock Text="01/01/0001 12:00:00 " Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="15"/>
+            </Grid>
+
+            <!--end left side of grid and contents-->
+           
+            <!--start center grid and contents-->
+            <Grid x:Name="grdCenterContainer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1"> 
+                <TextBlock Text="Live streaming" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15"></TextBlock>
+            </Grid>
+            
+            <!--end center grid and contents-->
+
+            <!--start center grid and contents-->
+            <Grid x:Name="grdRightContainer" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Vehicle count: 10" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="top" FontSize="15"/>
+                <StackPanel Grid.Row="1" HorizontalAlignment="Stretch" Orientation="Vertical">
+                    <TextBlock Text="No plate recognise info"  HorizontalAlignment="Center" VerticalAlignment="top" FontSize="15"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <TextBlock Text="India"  HorizontalAlignment="Left" FontSize="15" />
+                        <Image Source="/Icons/india.png" Height="20" HorizontalAlignment="Right" Margin="5,0,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+                <Image Source="/Icons/noplate.png" Grid.Row="2"></Image>
+            </Grid>
+
+            <!--end center grid and contents-->
+            
+        </Grid>
+        <Border BorderBrush="gray" BorderThickness="0,1" Grid.Row="1">
+            <Button x:Name="btnCollExpand" HorizontalAlignment="Stretch" Content="Collapse OR Expand" Margin="3" Click="btnCollExpand_Click_1"/>
+        </Border>
+        
+        <Grid x:Name="grdChildStream" Grid.Row="2" HorizontalAlignment="Stretch" Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border BorderBrush="Gray" BorderThickness="1" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  >
+                <usrControl:LiveStreamingUserControl/>
+            </Border>
+            <Border BorderBrush="Gray" BorderThickness="1" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="3,0"  >
+                <usrControl:LiveStreamingUserControl />
+            </Border>
+            <Border BorderBrush="Gray" BorderThickness="1" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  >
+                <usrControl:LiveStreamingUserControl/>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

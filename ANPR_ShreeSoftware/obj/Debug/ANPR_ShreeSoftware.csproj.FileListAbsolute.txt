@@ -14,3 +14,31 @@ E:\Proffestional\Projects\ANPR\ANPR_ShreeSoftware\ANPR_ShreeSoftware\obj\Debug\A
 E:\Proffestional\Projects\ANPR\Project\ANPR\ANPR_ShreeSoftware\bin\Debug\ANPR_ShreeSoftware.exe.config
 E:\Proffestional\Projects\ANPR\Project\ANPR\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.exe
 E:\Proffestional\Projects\ANPR\Project\ANPR\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.pdb
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\bin\Debug\ANPR_ShreeSoftware.exe.config
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.exe
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.pdb
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.csprojResolveAssemblyReference.cache
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\MainWindow.baml
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\UserCotrol\LiveStreamingUserControl.baml
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\Views\HomePage.baml
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\Views\LoginPage.baml
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\Views\PartialView\SearchOptionPage.baml
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\Views\VehicleStastics.baml
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\App.baml
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\MainWindow.g.cs
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\UserCotrol\LiveStreamingUserControl.g.cs
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\Views\HomePage.g.cs
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\Views\LivestreamingPage.g.cs
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\Views\LoginPage.g.cs
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\Views\PartialView\SearchOptionPage.g.cs
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\Views\VehicleStastics.g.cs
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\App.g.cs
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware_MarkupCompile.cache
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware_MarkupCompile.lref
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\bin\Debug\ANPR_ShreeSoftware.exe
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\bin\Debug\ANPR_ShreeSoftware.pdb
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\Views\LivestreamingPage.baml
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.g.resources
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.Properties.Resources.resources
+C:\Users\MYPC\Desktop\New folder1\ANPR_ShreeSoftware\obj\Debug\ANPR_ShreeSoftware.csproj.GenerateResource.Cache
